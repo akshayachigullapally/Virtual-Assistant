@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600&display=swap');
+
+:root {
+  --primary-color: rgb(79,224,234);
+  --accent-color: rgb(237,4,125);
+  --dark-bg: rgb(10,10,15);
+  --text-color: rgba(255,255,255,0.9);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+h1, h2, .title-text, button {
+  font-family: "Orbitron", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10,10,15,0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
+  border-radius: 4px;
+}
+
+::selection {
+  background: rgba(79,224,234,0.3);
+  color: white;
+}
